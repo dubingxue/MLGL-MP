@@ -20,7 +20,15 @@ A dataset of 6669 compounds named "kegg_classes.txt" in dataset belonging to one
 
 
 ## 3. Create data 
-3.1 
+3.1 Pathway embeddings
+
+Running
+```sh
+Pathway_Embedding.ipynb 
+```
+Pathway_Embedding.pkl are obtained to be as node features in Pathway Dependence Graph
+
+3.2 Pathway Dependence Matrix 
 
 Running
 ```sh
@@ -29,6 +37,11 @@ python create_data.py
 train.csv and test.csv in data are input to create data in pytorch format,
 stored at data/processed/, consisting of  train.pt and test.pt.
 
-# Usage
+# Acknowledgements
+Part of the code was adopted from [2] and [3].
 # References
 [1] Baranwal, M., et al. A deep learning architecture for metabolic pathway prediction. Bioinformatics 2020;36(8):2547-2553.
+
+[2] Nguyen, T., et al. GraphDTA: predicting drug–target binding affinity with graph neural networks. Bioinformatics 2021;37(8):1140-1147.
+
+[3] Chen, Z.M., et al. Multi-Label Image Recognition with Graph Convolutional Networks. In, 2019 Ieee/Cvf Conference on Computer Vision and Pattern Recognition. Los Alamitos: Ieee Computer Soc; 2019. p. 5172-5181.
