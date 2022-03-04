@@ -42,6 +42,8 @@ MLGL-MP-(fold-1) is used as a example to obtain the result and other folds are s
 ```sh
 python Training.py
 ```
+In case study, we used 1 of 6 as the example, attention weights learned in GAT layer are captured and output by using gat_att_weights and gat_edge_indx. After that, the tensor of gat_att_weights and gat_edge_indx are used to attention.ipynb to visualize the important substructures of compounds.
+
 # Acknowledgements
 Part of the code was adopted from [2] and [3].
 # References
