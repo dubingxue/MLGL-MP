@@ -18,6 +18,7 @@ Framework enhanced by Pathway Inter-dependence for Metabolic Pathway Prediction 
 ## 2. Dataset
 A dataset of 6669 compounds named "kegg_classes.txt" in dataset belonging to one or more of these 11 constituent pathway types was adopted from [1].
 
+10-fold cross validation are used to the 6648 compounds (which can be converted to molecular graph).
 
 ## 3. Create data 
 3.1 Pathway embeddings
