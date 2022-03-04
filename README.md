@@ -38,6 +38,7 @@ python create_data.py
 train.csv and test.csv in data are input to create data in pytorch format,
 stored at data/processed/, consisting of  train.pt and test.pt.
 # Usage
+fold_1 are as a example to obtain the result and other folds are similar.
 ```sh
 python Training.py
 ```
