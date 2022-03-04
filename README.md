@@ -1,2 +1,34 @@
-# MLGL-MP
-1. Create data in pytorch format
+# Multi-Label Graph Learning for Metabolic Pathway (MLGL-MP) Prediction framework
+Multi-Label Graph Learning
+Framework enhanced by Pathway Inter-dependence for Metabolic Pathway Prediction is a novel framework to make fully use of available metabolic pathway data, which can learn the task for  Metabolic Pathway prediction. Here is the overview of the MLGL-MP framework.
+
+
+# Step-by-step running:
+
+## 1. Requirements
++ Python == 3.8
++ PyTorch == 1.8.0
++ rdikt == 2019.09.3
++ scikit-learn == 0.24.2
++ pandas == 1.2.0
++ numpy == 1.20.2
++ Jupyter Notebook
++ Install pytorch_geometric following instruction at https://github.com/rusty1s/pytorch_geometric
+
+## 2. Dataset
+A dataset of 6669 compounds named "kegg_classes.txt" in dataset belonging to one or more of these 11 constituent pathway types was adopted from [1].
+
+
+## 3. Create data 
+3.1 
+
+Running
+```sh
+python create_data.py
+```
+train.csv and test.csv in data are input to create data in pytorch format,
+stored at data/processed/, consisting of  train.pt and test.pt.
+
+# Usage
+# References
+[1] Baranwal, M., et al. A deep learning architecture for metabolic pathway prediction. Bioinformatics 2020;36(8):2547-2553.
