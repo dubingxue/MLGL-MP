@@ -22,13 +22,13 @@ A dataset of 6669 compounds named "kegg_classes.txt" in dataset belonging to one
 ## 3. Create data 
 3.1 Pathway embeddings
 
-Running
-```sh
-Pathway_Embedding.ipynb 
-```
-Pathway_Embedding.pkl are obtained to be as node features in Pathway Dependence Graph
+Running Pathway_Embedding.ipynb in Pre-training and obtain Pathway_Embedding.pkl to be as node features in Pathway Dependence Graph
 
 3.2 Pathway Dependence Matrix 
+
+Running adj_file.ipynb in Dataset / Data_10-fold cross validation / fold x and obtain adj.pkl to be as edges in Pathway Dependence Graph (codes are in fold 1)
+
+3.3 Obtain pytorch format data
 
 Running
 ```sh
@@ -36,7 +36,10 @@ python create_data.py
 ```
 train.csv and test.csv in data are input to create data in pytorch format,
 stored at data/processed/, consisting of  train.pt and test.pt.
-
+# Usage
+```sh
+python Training.py
+```
 # Acknowledgements
 Part of the code was adopted from [2] and [3].
 # References
