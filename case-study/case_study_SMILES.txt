@@ -1,0 +1,9 @@
+A
+O=Cc1cc(COP(=O)(O)O)co1
+O=C(O)C(CS(=O)(=O)O)OP(=O)(O)O
+O=C(O)C(CS(=O)(=O)O)OP(=O)(O)O
+
+B
+NCCCCC(N)=O
+NC(CCCCNO)C(=O)O
+[*]NC(CCC(=O)NC(CCCCN)C(=O)O)C(=O)O
