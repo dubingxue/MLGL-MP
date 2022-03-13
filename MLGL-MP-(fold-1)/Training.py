@@ -67,7 +67,7 @@ else:
     # training the model
     device = torch.device(cuda_name if torch.cuda.is_available() else "cpu")
     num_classes = 11
-    model = MLGL_MP(num_classes=num_classes, t=0.1, adj_file='adj.pkl').to(device)
+    model = MLGL_MP(num_classes=num_classes, t=0.5, adj_file='adj.pkl').to(device)
     criterion = nn.MultiLabelSoftMarginLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=LR)
     max_acc = 0
