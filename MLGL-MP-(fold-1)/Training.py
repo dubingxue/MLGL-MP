@@ -30,8 +30,8 @@ def predicting(model, device, loader):
         for data in loader:
             data = data.to(device)
             output = model(data,inp)
-            total_preds =  output.cpu()
-            total_labels = data.y
+            total_preds = torch.cat((total_preds, output.cpu()), 0)
+            total_labels = torch.cat((total_labels, data.y.cpu()), 0)
     return total_labels,total_preds
 
 cuda_name = "cuda:0"
