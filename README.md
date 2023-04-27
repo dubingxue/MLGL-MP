@@ -12,6 +12,7 @@ Framework enhanced by Pathway Inter-dependence for Metabolic Pathway Prediction 
 + pandas == 1.2.0
 + numpy == 1.20.2
 + rdkit 
++ network
 + Jupyter Notebook
 + Install pytorch_geometric following instruction at https://github.com/rusty1s/pytorch_geometric
 
